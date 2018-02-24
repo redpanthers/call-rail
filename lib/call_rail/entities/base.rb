@@ -37,8 +37,8 @@ module CallRail
       end
     end
 
-    def self.find(id, options= {})
-      uri = URI.parse(BASE_URI + (url_param_name % options)  + "/#{id}.json")
+    def self.find(id, options = {})
+      uri = URI.parse(BASE_URI + (url_param_name % options) + "/#{id}.json")
       response = send_request(uri)
       new(JSON.parse(response.body))
     end

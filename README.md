@@ -39,7 +39,7 @@ end
   account.businesses
 ```
 
-### Get all calls inside a account
+### Get all calls inside an account
 
 ```ruby
   account = Account.find(<account_id>)

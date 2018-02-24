@@ -11,15 +11,6 @@ module CallRail
       'agencies'
     end
 
-    
-    def as_json
-      {
-        'id' => id,
-        'name' => name,
-        'outbound_recording_enabled' => outbound_recording_enabled
-      }
-    end
-
     def companies
       Company.all(account_id: id)
     end
