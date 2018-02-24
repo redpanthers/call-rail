@@ -2,7 +2,6 @@ require 'call_rail/version'
 require 'net/http'
 require 'uri'
 require 'json'
-require 'sniffer'
 
 require_relative 'call_rail/entities/base'
 require_relative 'call_rail/entities/account'
